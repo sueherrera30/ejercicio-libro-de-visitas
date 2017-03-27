@@ -72,12 +72,12 @@ function alinearIzquierda(){
 
 
 function agregarComentario(){
- // var nuevoElemento = document.createElement('p');
- //  var lista = document.getElementById('comentarios');
- //  var textoEditado = document.getElementById('modificado').innerHTML;
- //  nuevoElemento.innerHTML = textoEditado;
- //  lista.appendChild(nuevoElemento);
-var element = document.getElementById('modificado').innerHTML;
-var nuevo = element.cloneNode();
-  element.appendChild(nuevo);
+ var nuevoElemento = document.createElement('p');
+  var lista = document.getElementById('comentarios');
+  var textoEditado = document.getElementById('modificado').innerHTML;
+  nuevoElemento.innerHTML = textoEditado;
+  lista.appendChild(nuevoElemento);
+// var element = document.getElementById('modificado').innerHTML;
+// var nuevo = element.cloneNode();
+//   element.appendChild(nuevo);
 }
