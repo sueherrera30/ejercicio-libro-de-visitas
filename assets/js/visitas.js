@@ -69,15 +69,16 @@ function alinearIzquierda(){
  document.getElementById("modificado").style.textAlign = "left";
   }
 
-
-
 function agregarComentario(){
- var nuevoElemento = document.createElement('p');
-  var lista = document.getElementById('comentarios');
-  var textoEditado = document.getElementById('modificado').innerHTML;
-  nuevoElemento.innerHTML = textoEditado;
-  lista.appendChild(nuevoElemento);
-// var element = document.getElementById('modificado').innerHTML;
-// var nuevo = element.cloneNode();
-//   element.appendChild(nuevo);
+  var contenedor = document.getElementById('comentarios');
+  var vizualizacion = document.getElementById('modificado');
+  var nuevo = vizualizacion.cloneNode(true);
+   nuevo.id= Date.now();
+  contenedor.insertBefore(nuevo,contenedor.firstChild);//agrega este elemento nuevo a este conetenedor como primer hijo nodo ?? :O 
+
 }
+ // var nuevoElemento = document.createElement('p');
+ //  var lista = document.getElementById('comentarios');
+ //  var textoEditado = document.getElementById('modificado').innerHTML;
+ //  nuevoElemento.innerHTML = textoEditado;
+ //  lista.appendChild(nuevoElemento);
